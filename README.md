@@ -1,43 +1,45 @@
-# ANALISIS-DE-DATOS-RENFE-MEDIANTE-WEB-SCRAPING
+# ANALYSIS OF TRAIN FREQUENCY AND DELAY PATTERNS USING WEB SCRAPING
 
-Este proyecto utiliza web scraping para recopilar y analizar datos sobre los trenes de media y larga distancia en Renfe. Se obtienen horarios, llegadas y retrasos en distintas estaciones, mediante técncias de Web Scraping, y se almacenan en un archivo CSV. Posteriormente, se visualizan los resultados mediante gráficas para identificar patrones de uso y retrasos.
+This project uses web scraping to collect and analyze data on medium- and long-distance trains from Renfe. It gathers schedules, arrivals, and delays at different stations using web scraping techniques and stores the data in a CSV file. The results are then visualized through charts to identify usage and delay patterns.
 
-## Autor
+## Objective
 
-- [Fátima Fuchun Illana Guerra](https://github.com/Fatima-Illana)
+The objective of this project is to analyze which types of medium- and long-distance trains are most frequently used and which experience the longest delays at different Renfe stations. Using this information, visualizations are created to facilitate the analysis of train punctuality and frequency trends.
 
-## Objetivo
+## Web Scraping Process Preview
 
-El objetivo de este proyecto es analizar cuáles son los tipos de trenes de media y larga distancia más utilizados y cuáles presentan mayores tiempos de retraso en distintas estaciones de la red de Renfe. Con esta información, se crean visualizaciones que facilitan el análisis de las tendencias en puntualidad y frecuencia de los trenes.
+<img src="./Graficas/PrevisualizacionWebScraping.png" alt="Web Scraping Process Preview" width="1000"/>
 
-## Previsualización Proceso Web Scraping
+## Results Preview
 
-<img src="./Graficas/PrevisualizacionWebScraping.png" alt="Previsualizacion Proceso Web Scraping" width="1000"/>
+<img src="./Graficas/PrevisualizacionResultados1.png" alt="Results Preview 1" width="1000"/>
 
-## Previsualización Resultados
+<img src="./Graficas/PrevisualizacionResultados2.png" alt="Results Preview 2" width="1000"/>
 
-<img src="./Graficas/PrevisualizacionResultados1.png" alt="Previsualizacion Resultados 1" width="1000"/>
+## Project Structure
 
-<img src="./Graficas/PrevisualizacionResultados2.png" alt="Previsualizacion Resultados 2" width="1000"/>
+- **HorariosRenfeWebScraping.py**: Python script that performs web scraping of data from a single Renfe station page and stores it in the file 'HorariosLargaDistancia.csv'.
+- **VariasEstacionesWebScraping.py**: Python script that performs web scraping of multiple station pages and stores the data in 'HorariosLargaDistancia2.csv'.
+- **Datos/**: Folder where the generated CSV files with extracted data are stored:
+  - **CSVAcumulativo.csv**: A CSV file that compiles the results of running 'VariasEstacionesWebScraping.py' over multiple days. This CSV is used for the final analysis to include more data from several days.
+- **GraficasAnalisis.csv**: Python script that analyzes the data and generates the final charts.
+- **Graficas/**: Folder where the visualizations generated from the data are stored.
+- **InformeAnalisisRenfe**: Report that visually shows the data extraction process and the final charts.
 
-## Estructura del Proyecto
+This content is only available in spanish.
 
-- **HorariosRenfeWebScraping.py**: Script the Python que realiza web scraping de los datos en la página de Renfe de 1 sola estación, y lo almacena en el archivo 'HorariosLargaDistancia.csv'.
-- **VariasEstacionesWebScraping.py**: Script de Python que realiza el web scraping de los datos en la página de Renfe de varias estaciones y los almacena en el archivo 'HorariosLargaDistancia2.csv'.
-- **Carpeta Datos/**: Carpeta donde se almacenan los archivos CSV generados con los datos extraídos:
-  - **CSVAcumulativo.csv**: es un archivo CSV que recopila el resultado de ejecución de 'VariasEstacionesWebScraping.py' a lo largo de varios días. Es el csv empleado para el análisis final, para poder contar con más datos de varios días.
-- **GraficasAnalisis.csv**: Script de Python que realiza un estudio de los datos y genera las gráficas finales. 
-- **Carpeta Graficas**: Carpeta donde se guardan las visualizaciones generadas a partir de los datos.
-- **InformeAnalisisRenfe**: Informe que muestra gráficamente el proceso de extracción de datos y la visualización de las gráficas finales. 
+## Requirements
 
-## Requisitos
-
-Para ejecutar este proyecto, necesitas:
+To run this project, you need:
 
 - **Python 3.x**
-- Bibliotecas de Python:
-  - `Driver` (para permitir la interacción con un navegador web, en este caso Chrome)
-  - `Selenium` (para la extracción de datos mediante Web Scraping)
-  - `BeautifulSoup` (para parsing de HTML)
-  - `pandas` (para manipulación de datos)
-  - `matplotlib` (para visualización de datos)
+- Python libraries:
+  - `Driver` (to enable interaction with a web browser, in this case Chrome)
+  - `Selenium` (for data extraction via web scraping)
+  - `BeautifulSoup` (for HTML parsing)
+  - `pandas` (for data manipulation)
+  - `matplotlib` (for data visualization)
+ 
+## Author
+
+- [Fátima Fuchun Illana Guerra](https://github.com/Fatima-Illana)
