@@ -18,13 +18,25 @@ The objective of this project is to analyze which types of medium- and long-dist
 
 ## Project Structure
 
-- **HorariosRenfeWebScraping.py**: Python script that performs web scraping of data from a single Renfe station page and stores it in the file 'HorariosLargaDistancia.csv'.
-- **VariasEstacionesWebScraping.py**: Python script that performs web scraping of multiple station pages and stores the data in 'HorariosLargaDistancia2.csv'.
-- **Datos/**: Folder where the generated CSV files with extracted data are stored:
-  - **CSVAcumulativo.csv**: A CSV file that compiles the results of running 'VariasEstacionesWebScraping.py' over multiple days. This CSV is used for the final analysis to include more data from several days.
-- **GraficasAnalisis.csv**: Python script that analyzes the data and generates the final charts.
-- **Graficas/**: Folder where the visualizations generated from the data are stored.
-- **InformeAnalisisRenfe**: Report that visually shows the data extraction process and the final charts.
+```text
+
+💶 ANALYSIS OF TRAIN FREQUENCY AND DELAY PATTERNS USING WEB SCRAPING
+├── 📁 Datos
+│       → Folder where the generated CSV files with extracted data are stored.
+│       → 🟩 CSVAcumulativo.csv: A CSV file that compiles the results of running 'VariasEstacionesWebScraping.py' over multiple days. This CSV is used for the final analysis to include more data from several days.
+├── 📁 Graficas
+│       → Folder where the visualizations generated from the data are stored.
+├── 📄 HorariosRenfeWebScraping.py
+│       → Python script that performs web scraping of data from a single Renfe station page and stores it in the file 'HorariosLargaDistancia.csv'.
+├── 📄 VariasEstacionesWebScraping.py
+│       → Python script that performs web scraping of multiple station pages and stores the data in 'HorariosLargaDistancia2.csv'.
+├── 📄 GraficasAnalisis.py
+│       → Python script that analyzes the data and generates the final charts.
+├── 📄 README.md
+│       → Documentation of the project.
+└── 📄 InformeAnalisisRenfe.pdf
+        → Report that visually shows the data extraction process and the final charts.
+```
 
 This content is only available in spanish.
 
