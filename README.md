@@ -20,7 +20,7 @@ The objective of this project is to analyze which types of medium- and long-dist
 
 ```text
 
-💶 ANALYSIS OF TRAIN FREQUENCY AND DELAY PATTERNS USING WEB SCRAPING
+🚅 ANALYSIS OF TRAIN FREQUENCY AND DELAY PATTERNS USING WEB SCRAPING
 ├── 📁 Datos
 │       → Folder where the generated CSV files with extracted data are stored.
 │       → 🟩 CSVAcumulativo.csv: A CSV file that compiles the results of running 'VariasEstacionesWebScraping.py' over multiple days. This CSV is used for the final analysis to include more data from several days.
